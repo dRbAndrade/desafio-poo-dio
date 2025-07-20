@@ -74,4 +74,12 @@ public class Dev {
     public int hashCode() {
         return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
+
+    @Override
+    public String toString() {
+        return "Dev: '" + nome + "'" +
+                ", conteudos inscritos:" + conteudosInscritos +
+                ", conteudos concluidos:" + conteudosConcluidos +
+                ", xp total: " + calcularTotalXp() + '}';
+    }
 }
